@@ -1,4 +1,4 @@
-<!<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ro">
 <head>
   <meta charset="UTF-8" />
@@ -8,38 +8,38 @@
   <script>
     tailwind.config = { darkMode: 'class' };
   </script>
-  <style> body { font-family: 'Segoe UI', system-ui, sans-serif; } </style>
+  <style> body { font-family: 'Inter', system-ui, sans-serif; } </style>
 </head>
 <body class="bg-gray-50 text-gray-900 transition-colors duration-300" id="body">
   <header class="py-6 px-6 border-b border-gray-200">
     <div class="max-w-6xl mx-auto flex justify-between items-center">
       <h1 class="text-2xl font-light">Picturile foamei</h1>
-      <button onclick="toggleDark()" class="p-2 rounded bg-gray-200 text-gray-700">
-        🌙
-      </button>
+      <div class="flex items-center space-x-2">
+        <button onclick="toggleLang()" class="text-sm font-medium text-gray-600 hover:text-gray-900">RO / EN</button>
+        <button onclick="toggleDark()" class="p-2 rounded bg-gray-200 text-gray-700">
+          🌙
+        </button>
+      </div>
     </div>
   </header>
+
   <main class="py-20 px-6">
     <div class="max-w-4xl mx-auto text-center">
       <div class="p-8 rounded-lg bg-white border border-gray-200">
-        <h2 class="text-3xl md:text-4xl font-light leading-relaxed">
+        <h2 class="text-3xl md:text-4xl font-light leading-relaxed" id="hero">
           Picturile foamei: Opere de artă exclusive închiriate în numele sănătății și egalității sociale.
         </h2>
       </div>
-      <div class="mt-8">
-        <p class="text-lg">Website-ul este în construcție. Vă mulțumim pentru răbdare!</p>
-        <p class="mt-4 text-sm text-gray-600">© 2024 Picturile foamei</p>
+      <div class="mt-8 flex justify-center space-x-4">
+        <button class="px-6 py-3 text-sm font-medium border border-gray-300 hover:bg-gray-100">
+          Galeria Online
+        </button>
+        <button class="px-6 py-3 text-sm font-medium bg-gray-800 text-white hover:bg-gray-900">
+          Închiriere picturi
+        </button>
       </div>
     </div>
   </main>
-  <script>
-    function toggleDark() {
-      const body = document.getElementById('body');
-      body.classList.toggle('bg-gray-900');
-      body.classList.toggle('text-gray-100');
-      body.classList.toggle('bg-gray-50');
-      body.classList.toggle('text-gray-900');
-    }
-  </script>
-</body>
-</html>￼Enter
+
+  <footer class="py-12 px-6 border-t border-gray-200 text-center text-sm text-gray-500">
+    © 2024 Picturile foamei • Artă, poezie și sp
